@@ -1,6 +1,7 @@
 package com.adityajha.ServiceBookingSystem.services.authentication;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 import com.adityajha.ServiceBookingSystem.dto.SignupRequestDTO;
 import com.adityajha.ServiceBookingSystem.dto.UserDto;
@@ -8,6 +9,7 @@ import com.adityajha.ServiceBookingSystem.entity.User;
 import com.adityajha.ServiceBookingSystem.enums.UserRole;
 import com.adityajha.ServiceBookingSystem.repository.UserRepository;
 
+@Service
 public class AuthServiceImpl implements AuthService {
 
     @Autowired
