@@ -11,19 +11,12 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
 import { provideHttpClient } from '@angular/common/http';
 import { DemoNgZorroAntdModule } from './DemoNgZorroAntdModule';
-import { SignupComponent } from './basic/components/signup/signup.component';
-import { SignupClientComponent } from './basic/components/signup-client/signup-client.component';
-import { LoginComponent } from './basic/components/login/login.component';
-
 
 registerLocaleData(en);
 
 @NgModule({
   declarations: [
-    AppComponent,
-   SignupComponent,
-   SignupClientComponent,
-   LoginComponent
+    AppComponent
   ],
   imports: [
     BrowserModule,
