@@ -1,5 +1,6 @@
 package com.adityajha.ServiceBookingSystem.controller;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -14,6 +15,7 @@ import com.adityajha.ServiceBookingSystem.services.authentication.AuthService;
 @RestController
 public class AuthenticationController {
 
+    @Autowired
     private AuthService authService;
 
     @PostMapping("/client/sign-up")
